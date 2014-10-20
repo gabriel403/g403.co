@@ -1,0 +1,51 @@
+body {
+	padding-top: 70px;
+	position: relative;
+}
+.container {
+ 	position: relative;
+}
+
+.navbar-default {
+	background-image: none;
+	background-color: #fff;
+	border-color: #ecf0f1;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#big-ass-banner {
+	height: 200px;
+	width: 100%;
+	background-color: #ecf0f1;
+	margin-top: -20px;
+	position: fixed;
+	top: 70px;
+	z-index: 100;
+}
+
+	#big-ass-banner.small-ass-banner #big-ass-banner-word {
+		/*font-size: 2em;*/
+	}
+
+#big-ass-banner-word {
+	font-size: 4em;
+	position: absolute;
+	opacity: 1;
+	z-index: 100;
+}
+
+	#big-ass-banner-word.faded {
+		opacity: 0;
+	}
+
+	#big-ass-banner-word.animate {
+		transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
+	}
+
+/*#below-banner.small-ass-banner {
+	padding-top: 180px;
+}*/
