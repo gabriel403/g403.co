@@ -1,23 +1,34 @@
-body {
-	padding-top: 70px;
+html, body {
+	display: block;
+	height: 100%;
 	position: relative;
 }
-.container {
- 	position: relative;
+
+body {
+	padding-top: 70px;
 }
 
-.navbar-default {
+.add_buffer {
+	margin: -55px;
+}
+
+.container {
+ 	position: relative;
+ 	width: 80%;
+}
+
+./*navbar-default {
 	background-image: none;
 	background-color: #fff;
 	border-color: #ecf0f1;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-}
+}*/
 
 #big-ass-banner {
 	height: 200px;
-	width: 100%;
+	/*width: 100%;*/
 	background-color: #ecf0f1;
 	margin-top: -20px;
 	position: fixed;
