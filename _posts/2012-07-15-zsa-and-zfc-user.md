@@ -7,7 +7,6 @@ tags:
 - composer
 - blog
 - zendframework2
-permalink: /blog/Posts/ZSAAndZFCUser.html
 ---
 So I've been playing a lot with [zf2](https://github.com/zendframework/zf2/) recently and inspired by [EvanDotPro's post](http://blog.evan.pro/getting-started-with-the-zf2-skeleton-and-zfcuser) on getting things working using pure git, I thought I'd throw one up using composer+git.
 

@@ -9,7 +9,6 @@ tags:
 - php
 - zf2
 - zendframework2
-permalink: /blog/Posts/SMVsDIAndIoC.html
 ---
 Quick notes for dependency injection vs retrieving from service locator, this is mainly for zf2 but the basics apply elsewhere.
 

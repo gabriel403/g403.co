@@ -1,40 +1,22 @@
-{% include header.html %}
-{% include navbar.html %}
+<!DOCTYPE html>
+<html>
 
-<div id='big-ass-banner'><span id='big-ass-banner-word' class='faded animate'></span></div>
-<div class="container">
-	<div id='below-banner'>
-		<h1 id="about">About Me</h1>
-		<div>
-			{% capture about %}{% include about.md %}{% endcapture %}
-			{{ about | markdownify }}
-		</div>
+  {% include head.html %}
 
-		<h1 id="cv">CV</h1>
-		<div>
-			{% capture cv %}{% include cv.md %}{% endcapture %}
-			{{ cv | markdownify }}
-		</div>
+  <body data-spy="scroll" data-target=".bs-js-navbar-scrollspy">
 
-		<h1 id="portfolio">Portfolio</h1>
-		<p>
-			{% capture portfolio %}{% include portfolio.md %}{% endcapture %}
-			{{ portfolio | markdownify }}
-		</p>
+    {% include header.html %}
 
-		<h1 id="blog">Blog</h1>
-		<div>
-			{% for post in site.posts %}
-				<div class="article_content add_buffer" id='{{ post.title }}'>
-					<h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
-					<p class="meta">{{ post.date | date_to_string }}</p>
-					{{ post.content }}
-				</div>
-			{% endfor %}
-		</div>
+    <div class="container-fluid">
+      <h1><center>{{ site.name }} – {{ site.description }}</center></h1>
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
 
-		{{ content }}
-	</div>
-</div>
+  </body>
 
-{% include footer.html %}
+</html>

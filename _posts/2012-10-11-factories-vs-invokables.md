@@ -7,7 +7,6 @@ tags:
 - php
 - zf2
 - zendframework2
-permalink: /blog/Posts/FactoriesVsInvokables.html
 ---
 These are just some quick notes really, just for some future reference, mostly concerned with the differences as they pertain to invokables and factories in Zend/ServiceManager.
 

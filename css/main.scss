@@ -1,0 +1,107 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+html, body {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+body { padding-top: 70px!important; }
+
+.section:before {
+  content: "";
+  display: block;
+  margin: -70px 0 0;
+  height: 70px;
+}
+
+// Our variables
+$base-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$base-font-size:   15px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.4em;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    100%;
+section {
+  width: 80%;
+  margin: 10px auto;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+pre, code {
+  font-size: 13px;
+}
+
+.parallax.text {
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.parallax {
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 115px;
+}
+
+.parallax.portfolio {
+  background-image: url("/images/parallax-portfolio.jpg");
+}
+
+.parallax.about {
+  background-image: url("/images/parallax-about.jpg");
+}
+
+.parallax.cv {
+  background-image: url("/images/parallax-cv.jpg");
+}
+
+.parallax.blog {
+  background-image: url("/images/parallax-blog.jpg");
+}
+
+.parallax.icheev {
+  background-image: url("/images/parallax-icheev.jpg");
+  height: inherit;
+  padding-top: 0px;
+  margin-top: 60px;
+  // position: absolute;
+  // left: 0px
+}
+
+.parallax.fusions {
+  background-image: url("/images/parallax-fusions.jpg");
+  height: inherit;
+  padding-top: 0px;
+  margin-top: 60px;
+  // position: absolute;
+  // left: 0px
+}

@@ -1,4 +1,62 @@
 ---
 layout: default
-title: G403
 ---
+
+<div>
+
+  <div class="parallax about text">
+    <h1 id="about" class="section">About Me</h1>
+  </div>
+  <section>
+    <div>
+      {% capture about %}{% include about.md %}{% endcapture %}
+      {{ about | markdownify }}
+    </div>
+  </section>
+
+  <div class="parallax cv text">
+    <h1 id="cv" class="section">Experience</h1>
+  </div>
+  <section>
+    <div>
+      {% capture cv %}{% include cv.md %}{% endcapture %}
+      {{ cv | markdownify }}
+    </div>
+  </section>
+
+  <div class="parallax portfolio text">
+    <h1 id="portfolio" class="section">
+      Portfolio
+    </h1>
+  </div>
+  <section>
+    <div>
+      {% capture portfolio %}{% include portfolio.md %}{% endcapture %}
+      {{ portfolio | markdownify }}
+    </div>
+  </section>
+
+  <div class="parallax blog text">
+    <h1 id="blog" class="section">Blog</h1>
+  </div>
+  <section>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title"><a href='{{ post.url }}'>{{ post.title }}</a></h1>
+            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+          </header>
+
+          <article class="post-content">
+            {{ post.content }}
+          </article>
+
+        </div>
+      {% endfor %}
+    </ul>
+
+  </section>
+</div>

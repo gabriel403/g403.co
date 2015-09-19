@@ -7,7 +7,6 @@ tags:
 - Zend\Form
 - Zend\Form\Annotation
 - ComposedObject
-permalink: /blog/Posts/ZF2ComposedObjects.html
 ---
 How to combine multiple annotated entity derived forms into a single form.
 

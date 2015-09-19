@@ -6,7 +6,6 @@ tags:
 - zendframework2
 - php
 - Zend\Form
-permalink: /blog/Posts/Zf2CustomFormElement.html
 ---
 Quick walk through on creating a simple custom form element that just echos out the value.
 

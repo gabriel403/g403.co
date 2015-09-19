@@ -4,7 +4,6 @@ title: A Howto on Converting SVN repos to Git
 tags:
 - svn
 - git
-permalink: /blog/Posts/ConvertSVNToGit.html
 ---
 One of our major projects at GoMAD Tech is currently stored in SVN but is soon moving to git.
 

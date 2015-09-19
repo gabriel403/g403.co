@@ -7,7 +7,6 @@ tags:
 - php
 - noframework
 - blog
-permalink: /blog/Posts/BlogIntro.html
 ---
 I thought it was appropriate that the first blog post on my new blog (apart from the changelog) was about how I developed my blog!
 
