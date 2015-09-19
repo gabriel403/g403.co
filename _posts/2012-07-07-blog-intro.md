@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Introduction
+title: <s>Blog Introduction</s>
 tags:
 - html
 - responsive

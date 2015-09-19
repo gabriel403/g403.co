@@ -36,7 +36,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    100%;
-section {
+section, .section {
   width: 80%;
   margin: 10px auto;
 }
@@ -50,6 +50,12 @@ section {
 
 pre, code {
   font-size: 13px;
+}
+
+.post-list .post-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
 }
 
 .parallax.text {
@@ -93,8 +99,6 @@ pre, code {
   height: inherit;
   padding-top: 0px;
   margin-top: 60px;
-  // position: absolute;
-  // left: 0px
 }
 
 .parallax.fusions {
@@ -102,6 +106,16 @@ pre, code {
   height: inherit;
   padding-top: 0px;
   margin-top: 60px;
-  // position: absolute;
-  // left: 0px
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.post-list .col-md-4 {
+  height: 260px;
+}
+
+.post-list a:visited, .post-list a:link, .post-list a:active {
+  color: black;
 }
