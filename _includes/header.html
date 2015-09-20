@@ -13,10 +13,10 @@
       <ul class="nav navbar-nav">
         <li><a href="{% if page.url != "/index.html" %}/{% endif %}#about">About</a></li>
         <li><a href="{% if page.url != "/index.html" %}/{% endif %}#cv">Experience</a></li>
-        <li><a href="{% if page.url != "/index.html" %}/{% endif %}#portfolio">Portfolio</a></li>
+        <!-- <li><a href="{% if page.url != "/index.html" %}/{% endif %}#portfolio">Portfolio</a></li> -->
         <li><a href="{% if page.url != "/index.html" %}/{% endif %}#blog">Blog</a></li>
       </ul>
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav social">
         {% if site.links.email %}
           <li><a href="mailto:{{ site.links.email }}"><i class="navbar-link fa fa-envelope fa-2x"></i></a></li>
         {% endif %}

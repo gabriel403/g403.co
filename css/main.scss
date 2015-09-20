@@ -11,6 +11,11 @@ html, body {
 
 body { padding-top: 70px!important; }
 
+ul.social>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .section:before {
   content: "";
   display: block;
