@@ -6,16 +6,14 @@ I am currently systems developer for Fusions PIM, a system for managing product 
 I'm a passionate open source advocate producing various modules to ease the use of Slim Framework, Zend Framework 2, as well as my own website/blog, making use of various open source tools, such as Michelf's PHP Markdown Extra and GitHub for hosting. I blog on various PHP/JS related topics and present talks on various subjects at local user groups.
 
 <div class="parallax icheev" markdown="1">
-##Industrial Placement/Internship
+###<center>Go MAD Technology</center>
 
+##Industrial Placement/Internship
 During my placement year at university I started as a junior web developer working for Go MAD Thinking, working on iCheev. iCheev (yes that is how it's spelt) is a website to help people plan and achieve their goals, through various tools. I quickly became the server administrator handling SVN, access control, testing and live servers as well as deployment.
 
 I also introduced the trac bug tracking system which we've used to track the development process of new features as well tracking bugs from discovery to resolution.
 
 ##Post Graduate
-
-###Go MAD Technology
-
 After graduating I went back to working for the same company as web developer/server administrator.
 I started working with more languages such as C#.NET and Ruby.
 
@@ -33,7 +31,7 @@ After discovering the wonders of puppet and vagrant (and how github use puppet t
 </div>
 
 <div class="parallax fusions" markdown="1">
-###Fusions PIM
+###<center>Fusions PIM</center>
 
 ####Vagrant, Puppet and Packer
 One of my first jobs when I started working at Fusions was to rebuild the dev vm the company was currently using. Due to time constraints and only being a small company they hadn't had the oppertunity to keep the VM up to date nor to automate an installation with the various provisioning tools available.
