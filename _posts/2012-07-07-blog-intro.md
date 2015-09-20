@@ -8,6 +8,8 @@ tags:
 - noframework
 - blog
 ---
+###Don't bother, this is from when I was running my own convulted md->html parsing voodoo.
+
 I thought it was appropriate that the first blog post on my new blog (apart from the changelog) was about how I developed my blog!
 
 I've been meaning to write my own blog for a while now, I've never been fully happy with Wordpress. I was going to try and produce one with [Zend Framework 2](https://github.com/zendframework/zf2/), [node.js](http://nodejs.org/), Python, CouchDB, whatever fancy is currently on my mind. Whilst moving my blog between various VPSes, looking for the cheapest and best, I managed to lose my database backups.
