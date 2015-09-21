@@ -8,7 +8,7 @@ tags:
 - noframework
 - blog
 ---
-###Don't bother, this is from when I was running my own convulted md->html parsing voodoo.
+###Don't bother, this is from when I was running my own convoluted md->html parsing voodoo.
 
 I thought it was appropriate that the first blog post on my new blog (apart from the changelog) was about how I developed my blog!
 
