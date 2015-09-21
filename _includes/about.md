@@ -2,7 +2,7 @@ Welcome to G403.co, my name is Gabriel and I will be your host for this journey 
 
 I'm currently system's developer for [Fusions](https://fusionspim.com), producing code, maintaining systems and developing automation techniques (think [puppet](https://puppetlabs.com/), [vagrant](http://www.vagrantup.com/), [jenkins](http://jenkins-ci.org/) and [packer](http://www.packer.io/)) to streamline development, deployment and maintenace.
 
-I am formally a dev-op for [Go MAD Thinking](http://www.gomadthinking.com/), where I developed software as well maintained infrastructure.
+I am formerly a dev-op for [Go MAD Thinking](http://www.gomadthinking.com/), where I developed software as well maintained infrastructure.
 
 I suffer badly from chronic side project syndrome (CSPS), currently building [Slim API](https://github.com/slimphp-api), a set of command line tools for generating API endpoints/mvc architecture on top of Slim using Symfony's console component. I help where I can with maintenance on the [Slim PHP](https://github.com/slimphp) framework. I also built [DOM](https://github.com/gabriel403/do-manager), a front end for working with Digital Ocean's v2 API, though with the new team functionality in DO it's not needed so much.
 
