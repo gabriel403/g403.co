@@ -1,11 +1,12 @@
 # Site settings
+title: Your awesome title
 name: G403
-email: your-email@domain.com
+email: me@g403.co
 description: A website for awesome
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://g403.co" # the base hostname & protocol for your site
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'http://g403.co' # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 
 # Includes an icon in the footer for each user name you enter
 links:
@@ -15,6 +16,7 @@ links:
 
 # Build settings
 markdown: kramdown
+# theme: minima
 permalink: /:title/
 
 # Use the following plug-ins
