@@ -68,7 +68,7 @@ jobs:
 
 ```
 
-But all this was doing was pushing the code into the route, so everytime a new commit was pushed on whatever branch it would overwrite it. What I needed to do was push code to a subdir based on the branch name.
+But all this was doing was pushing the code into the root of the bucket, so everytime a new commit was pushed on whatever branch it would overwrite it. What I needed to do was push code to a subdir based on the branch name.
 
 GitHub actions provide various environment variables that can be used in scripts, one of these `GITHUB_REF` in branches will contain the branch name, so we're able to extract the branch name from this ref, there are various caveats to this, but for this simple case [Stack Overflow has my back](https://stackoverflow.com/questions/58033366/how-to-get-current-branch-within-github-actions)
 
