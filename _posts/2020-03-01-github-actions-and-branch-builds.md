@@ -12,7 +12,7 @@ My first blog post in FIVE YEARS :open_mouth:
 
 One of the problems you get with working on side projects with a group of people is the choices you have to make around tooling. You can use one of the awesome hosting providers like netlify or now.sh, but you're normally limited in the number of people that can join the project to contribute and/or the number of "build minutes" you project can do each month.
 
-For one of the projects I'm involved in we're using a private [GitHub]|(https://github.com/) repo (which will become public when we're ready) and [Netlify](https://www.netlify.com/) for the initial hosting.
+For one of the projects I'm involved in we're using a private [GitHub](https://github.com/) repo (which will become public when we're ready) and [Netlify](https://www.netlify.com/) for the initial hosting.
 Netlify on the free tier limits you to 200 build minutes/month and 2 collaborators. I decided to investigate how we could use [GitHub actions](https://github.com/features/actions) (limited to 2k minutes/month) and an [s3 bucket](https://aws.amazon.com/s3/pricing/) for which the pricing is pretty trivial.
 
 ### GitHub actions
