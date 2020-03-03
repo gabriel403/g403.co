@@ -10,14 +10,14 @@ tags:
 
 My first blog post in FIVE YEARS :open_mouth:
 
-One of the problems you get with working on side projects with a group of people is the choices you have to make around tooling. You can use one of the awesome hosting providers like netlify or now.sh, but you're normally limited in the number of people that can join the project to contribute and/or the number of "build minutes" you project can do each month.
+One of the problems you get with working on side projects with a group of people is the choices you have to make around tooling. You can use one of the awesome hosting providers like netlify or now.sh, but you're normally limited in the number of people that can join the project to contribute and/or the number of "build minutes" your project can do each month.
 
 For one of the projects I'm involved in we're using a private [GitHub](https://github.com/) repo (which will become public when we're ready) and [Netlify](https://www.netlify.com/) for the initial hosting.
-Netlify on the free tier limits you to 200 build minutes/month and 2 collaborators. I decided to investigate how we could use [GitHub actions](https://github.com/features/actions) (limited to 2k minutes/month) and an [s3 bucket](https://aws.amazon.com/s3/pricing/) for which the pricing is pretty trivial.
+Netlify on the free tier limits you to 200 build minutes/month and 2 collaborators. I decided to investigate how we could use [GitHub actions](https://github.com/features/actions) (limited to 2k minutes/month) and an [s3 bucket](https://aws.amazon.com/s3/pricing/) for which the pricing is pretty trivial, to see if this is a viable alternative. And for something to blog about.
 
 ### GitHub actions
 
-Like many code hosting apps GitHub now offers the ability to run a pipeline for build/testing/deploying code. These can be filtered based on pushing to branch, opening pull requests, making a comment etc, and there are many publicly available pre-built actions that we can use, but we also have the option to write/run our own.
+Like many code hosting apps GitHub now offers the ability to run a pipeline for linting/building/testing/deploying code. These actions can be filtered based on pushing to branch, opening pull requests, making a comment etc, and there are many publicly available pre-built actions that we can use, but we also have the option to write/run our own.
 
 ### Website hosting with S3
 
