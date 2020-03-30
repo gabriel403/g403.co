@@ -48,7 +48,6 @@ $grey-color-dark: darken($grey-color, 25%);
 $content-width: 100%;
 section,
 .section {
-  width: 80%;
   margin: 10px auto;
 }
 
@@ -59,23 +58,28 @@ pre,
 code {
   font-size: 13px;
 }
-
 .post-list .post-title {
-  font-size: 45px;
+  font-size: 40px;
   line-height: 45px;
   font-weight: 500;
 }
 
+.parallax.text a:visited,
+.parallax.text a:link,
+.parallax.text a:active {
+  color: aquamarine;
+  font-weight: 900;
+}
+
 .parallax.text {
   font-size: 70px;
-  color: white;
   text-align: center;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
   line-height: 600px;
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .parallax {
   height: 300px;
@@ -158,6 +162,14 @@ h1 {
 .post-list a:link,
 .post-list a:active {
   color: black;
+}
+
+a:visited.bold-link,
+a:link.bold-link,
+a:active.bold-link {
+  font-weight: 900;
+  font-variant: small-caps;
+  color: slateblue;
 }
 
 .highlight,

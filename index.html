@@ -3,37 +3,38 @@ layout: default
 ---
 
 <div>
-
   <div class="parallax about text">
     <h1 id="about" class="section">About Me</h1>
   </div>
   <section>
-    <div>
-      {% capture about %}{% include about.md %}{% endcapture %}
-      {{ about | markdownify }}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {% capture about %}{% include about.md %}{% endcapture %} {{ about |
+        markdownify }}
+      </div>
     </div>
   </section>
 
   <div class="parallax cv text">
     <h1 id="cv" class="section">Experience</h1>
-    <h3><center><a href="/assets/gabriel-baker-cv.pdf">Download CV as pdf</a></center></h3>
+    <h3>
+      <a href="/assets/gabriel-baker-cv.pdf">
+        Download CV as pdf
+      </a>
+    </h3>
   </div>
   <section>
-    <div>
-      {% capture cv %}{% include cv.md %}{% endcapture %}
-      {{ cv | markdownify }}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {% capture cv %}{% include cv.md %}{% endcapture %} {{ cv | markdownify
+        }}
+      </div>
     </div>
-  <!-- </section>
-
-  <div class="parallax portfolio text">
-    <h1 id="portfolio" class="section">
-      Portfolio
-    </h1>
-  </div>
-  <section> -->
-    <div>
-      {% capture portfolio %}{% include portfolio.md %}{% endcapture %}
-      {{ portfolio | markdownify }}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {% capture portfolio %}{% include portfolio.md %}{% endcapture %} {{
+        portfolio | markdownify }}
+      </div>
     </div>
   </section>
 
@@ -41,25 +42,24 @@ layout: default
     <h1 id="blog" class="section">Blog</h1>
   </div>
   <section>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    <div class="row">
-      {% for post in site.posts %}
-      {% endfor %}
-    </div>
     <div class="post-list">
-      {% for post in site.posts %}
-        {% capture thecycle %}{% cycle 'first', 'second', 'third' %}{% endcapture %}
-        {% if thecycle == 'first' %}
-          <div class="row">
-        {% endif %}
-          <div class="col-md-4 h">
-            <a href='{{ post.url }}' class="post-title">{{ post.title }}</a>
-            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          </div>
-        {% if thecycle == 'third' %}
-          </div>
-        {% endif %}
-      {% endfor %}
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p class="rss-subscribe">
+            Subscribe via <a href="/feed.xml" class="bold-link">RSS</a>
+          </p>
+          {% for post in site.posts %}
+          <p>
+            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+          </p>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p>{{ post.excerpt }}</p>
+          <p>
+            <a href="{{ post.url }}" class="bold-link">READ MORE</a>
+          </p>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </section>
 </div>

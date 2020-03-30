@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Implementing ViewPager2 in a basic Android app
+excerpt: This is 1st in a series of quick blog posts on implementing some features in an Android app. ViewPager allows us have a horizontal (and vertical) swiping component that populates from a series/list of various kinds, either Views, Fragements or data sources.
 tags:
   - android
   - kotlin
@@ -8,7 +9,7 @@ tags:
   - databinding
 ---
 
-I've only been learning Android for the last 6 months or so, in my spare time, so this is 1st in a series of quick blog posts on implementing some features in an Android app. These will be fairly basic for most experienced people, but help me and maybe anyone new with getting to grips with these things. 
+I've only been learning Android for the last 6 months or so, in my spare time, so this is 1st in a series of quick blog posts on implementing some features in an Android app. These will be fairly basic for most experienced people, but helped me and maybe help other new devs with getting to grips with these things. 
 
 [You can find the code in a GitHub repo](https://github.com/gabriel403/ViewPager2Demo)
 

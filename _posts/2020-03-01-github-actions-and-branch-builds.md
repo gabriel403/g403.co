@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using GitHub actions to deploy branch builds to a s3 bucket
+excerpt: My first blog post in FIVE YEARS 😮 This post is about using github actions to build static sites on branches and deploying them to S3.
 tags:
   - GitHub
   - s3
