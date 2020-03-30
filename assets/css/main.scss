@@ -166,6 +166,9 @@ h1 {
 .post-list a:active {
   color: black;
 }
+// a:hover.post-title {
+//   color: slateblue;
+// }
 
 a:visited.bold-link,
 a:link.bold-link,
@@ -173,6 +176,10 @@ a:active.bold-link {
   font-weight: 900;
   font-variant: small-caps;
   color: slateblue;
+}
+
+a:hover.bold-link {
+  color: black;
 }
 
 .highlight,
