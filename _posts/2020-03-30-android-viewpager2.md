@@ -8,7 +8,7 @@ tags:
   - databinding
 ---
 
-I've only been learning Android for the last 6 months or so, so this is 1st in a series of quick blog posts on implementing some features in an Android app. These will be fairly basic for most experienced people, but help me and maybe anyone new with getting to grips with these things. 
+I've only been learning Android for the last 6 months or so, in my spare time, so this is 1st in a series of quick blog posts on implementing some features in an Android app. These will be fairly basic for most experienced people, but help me and maybe anyone new with getting to grips with these things. 
 
 [You can find the code in a GitHub repo](https://github.com/gabriel403/ViewPager2Demo)
 
