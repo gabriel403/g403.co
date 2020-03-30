@@ -86,31 +86,61 @@ code {
   padding-top: 115px;
 }
 
-.parallax.portfolio {
+.no-webp .parallax.portfolio {
   background-image: url("/images/parallax-portfolio.jpg");
 }
 
-.parallax.about {
+.no-webp .parallax.about {
   background-image: url("/images/parallax-about.jpg");
 }
 
-.parallax.cv {
+.no-webp .parallax.cv {
   background-image: url("/images/parallax-cv.jpg");
 }
 
-.parallax.blog {
+.no-webp .parallax.blog {
   background-image: url("/images/parallax-blog.jpg");
 }
 
-.parallax.icheev {
+.no-webp .parallax.icheev {
   background-image: url("/images/parallax-icheev.jpg");
+}
+
+.no-webp .parallax.fusions {
+  background-image: url("/images/parallax-fusions.jpg");
+}
+
+.webp .parallax.portfolio {
+  background-image: url("/images/parallax-portfolio.webp");
+}
+
+.webp .parallax.about {
+  background-image: url("/images/parallax-about.webp");
+}
+
+.webp .parallax.cv {
+  background-image: url("/images/parallax-cv.webp");
+}
+
+.webp .parallax.blog {
+  background-image: url("/images/parallax-blog.webp");
+}
+
+.webp .parallax.icheev {
+  background-image: url("/images/parallax-icheev.webp");
+}
+
+.webp .parallax.fusions {
+  background-image: url("/images/parallax-fusions.webp");
+}
+
+.parallax.icheev {
   height: inherit;
   padding-top: 0px;
   margin-top: 60px;
 }
 
 .parallax.fusions {
-  background-image: url("/images/parallax-fusions.jpg");
   height: inherit;
   padding-top: 0px;
   margin-top: 60px;
