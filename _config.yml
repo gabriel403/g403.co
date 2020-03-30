@@ -18,6 +18,7 @@ links:
 markdown: kramdown
 # theme: minima
 permalink: /:title/
+linenos: true
 
 # Use the following plug-ins
 plugins:

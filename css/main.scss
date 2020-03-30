@@ -1,17 +1,22 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-html, body {
+@charset "utf-8";
+@import "native.css";
+
+html,
+body {
   display: block;
   height: 100%;
   position: relative;
 }
 
-body { padding-top: 70px!important; }
+body {
+  padding-top: 70px !important;
+}
 
-ul.social>li>a {
+ul.social > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -24,36 +29,34 @@ ul.social>li>a {
 }
 
 // Our variables
-$base-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$base-font-size:   15px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size: 15px;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.4em;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color: #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    100%;
-section, .section {
+$content-width: 100%;
+section,
+.section {
   width: 80%;
   margin: 10px auto;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "base", "layout", "syntax-highlighting";
 
-pre, code {
+pre,
+code {
   font-size: 13px;
 }
 
@@ -121,6 +124,19 @@ h1 {
   height: 260px;
 }
 
-.post-list a:visited, .post-list a:link, .post-list a:active {
+.post-list a:visited,
+.post-list a:link,
+.post-list a:active {
   color: black;
+}
+
+.highlight,
+pre,
+code {
+  background-color: whitesmoke !important;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
 }
