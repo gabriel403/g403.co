@@ -1,0 +1,101 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  TableName:
+    Type: String
+    AllowedPattern: '.+'
+
+Globals:
+  Api:
+    EndpointConfiguration: REGIONAL
+
+Resources:
+  ApiGatewayRole:
+    Type: AWS::IAM::Role
+    Properties:
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ['apigateway.amazonaws.com']
+            Action: 'sts:AssumeRole'
+      Path: '/'
+      Policies:
+        - PolicyName: DynamoApiPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: 'Allow'
+                Action:
+                  - 'logs:*'
+                Resource: '*'
+              - Effect: 'Allow'
+                Action:
+                  - 'dynamodb:Scan'
+                  - 'dynamodb:Query'
+                Resource:
+                  'Fn::Sub': 'arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/*'
+  ApiGatewayApi:
+    Type: AWS::Serverless::Api
+    DependsOn: DynamoDBTable
+    Properties:
+      Name: 'ServicesGateway'
+      StageName: prod
+      MethodSettings:
+        - ResourcePath: '/*'
+          HttpMethod: '*'
+          LoggingLevel: INFO
+          MetricsEnabled: true
+          DataTraceEnabled: true
+      DefinitionBody:
+        openapi: '3.0.1'
+        paths:
+          /:
+            get:
+              responses:
+                '200':
+                  description: '200 response'
+                  content:
+                    application/json:
+                      schema:
+                        $ref: '#/components/schemas/Empty'
+              x-amazon-apigateway-integration:
+                credentials: !GetAtt [ApiGatewayRole, Arn]
+                uri:
+                  'Fn::Sub': 'arn:aws:apigateway:${AWS::Region}:dynamodb:action/Scan'
+                responses:
+                  default:
+                    statusCode: '200'
+                requestTemplates:
+                  application/json:
+                    { 'Fn::Sub': "{\n  \"TableName\": \"${TableName}\"\n}" }
+                passthroughBehavior: 'when_no_templates'
+                httpMethod: 'POST'
+                type: 'aws'
+        components:
+          schemas:
+            Empty:
+              title: 'Empty Schema'
+              type: 'object'
+
+  DynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref TableName
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+        - AttributeName: order_id
+          AttributeType: N
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+        - AttributeName: order_id
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: '5'
+        WriteCapacityUnits: '5'
+
+Transform: AWS::Serverless-2016-10-31
