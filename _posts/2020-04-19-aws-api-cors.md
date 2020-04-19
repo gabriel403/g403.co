@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS API Gateway CORS issues
+title: AWS API Gateway part 2 - CORS 😱
 tags:
   - aws
   - api
