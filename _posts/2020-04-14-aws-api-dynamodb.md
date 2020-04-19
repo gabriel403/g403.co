@@ -115,7 +115,7 @@ And then we create the API gateway to fetch the data from the table
 
 We use the scan action on the table to fetch all the data in a single request, this will cause problems if the dataset is large but will do just fine for the small datasets we'll be using in the example. 
 
-### __JSON Data __
+### __JSON Data__
 There's a bit more setup but this is essentially it, we insert the data we want to use.
 ```
 {
@@ -127,7 +127,7 @@ There's a bit more setup but this is essentially it, we insert the data we want 
 }
 ```
 
-### __JSON Response & Transformation __
+### __JSON Response & Transformation__
 When we make a request to fetch this we do get the dynamodb structure back in the response
 ```
 {
@@ -172,7 +172,7 @@ This turns our template file from fairly generic into something very specific, b
 
 There's some extra bits we can add in for a custom domain name, redundancy etc, otherwise we can access our api through the stand aws gateway address.
 
-The cloudformation template for this is suprisingly simple, barely a hundred lines of yaml, a bit too much to display in-line so here's the final file [cloudformation-template.yaml](/assets/cloudformation-template.yaml)
+The cloudformation template for this is suprisingly simple, barely a hundred lines of yaml, a bit too much to display in-line so here's the final file [cloudformation-template.yaml](/assets/aws-api-dynamodb-template.yaml)
 
 ### __Deploying Stack__
 We can run it with
