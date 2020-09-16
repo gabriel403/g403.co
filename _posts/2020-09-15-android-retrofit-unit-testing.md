@@ -24,13 +24,13 @@ Actual   :null
 Google was not helping with this, as I said there was not many posts about testing and only a tiny subset of them had testing Retrofit and RxJava. Don't get me wrong, millions of posts about Retrofit and RxJava, but who wants to write about testing in a blog post...
 
 ### Immediate Executor and Immediate Scheduler
-So I turned to my trusty source for all things Android, my sister Maja. Her response: "Immediate executor for tests, Google it". So I did. This led me to [this blog](https://www.codexpedia.com/android/unit-test-Retrofit-2-RxJava-2-and-livedata-in-android/) it seemed a bit out of date but was enough to get me to the end result. I added
+So I turned to my trusty source for all things Android, my sister Maja. Her response: "Immediate executor for tests, Google it", and doing so led me to this led me to [this blog](https://www.codexpedia.com/android/unit-test-Retrofit-2-RxJava-2-and-livedata-in-android/) it seemed a bit out of date but was enough to get me to the end result I wanted. I added
 ```
 @Rule
 @JvmField
 var rule = InstantTaskExecutorRule()
 ```
-and created a customer scheduler
+and created a custom [scheduler rule](https://github.com/gabriel403/AndroidTesting/blob/master/flickr/src/test/java/co/g403/android/flickr/datasource/RxImmediateSchedulerRule.kt)
 ```
 // Test rule for making the RxJava run synchronously in unit tests
 companion object {
