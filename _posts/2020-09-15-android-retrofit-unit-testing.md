@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing an Retrofit and RxJava Android Library using Mockito
+title: Testing a Retrofit/RxJava Android library using Mockito
 excerpt: There's lots of blog posts out there with great examples on how to do certain things in Kotlin/Android. What there seems to be a lack of, in general, is how to write tests, how to write tests for complex apps, or libraries.
 tags:
   - Android
