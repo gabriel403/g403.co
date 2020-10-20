@@ -40,7 +40,7 @@ android {
 
 		testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
 		consumerProguardFiles("consumer-rules.pro")
-		buildConfigField("String", "SECURE_API_KEY", "\"$System.getenv("SECURE_API_KEY")\"" ?: "\"\"")
+		buildConfigField("String", "SECURE_API_KEY", "\"$System.getenv("SECURE_API_KEY")\"")
 	}
 }
 ```
